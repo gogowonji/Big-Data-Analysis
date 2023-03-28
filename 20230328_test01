@@ -1,0 +1,16 @@
+import random
+
+count = 0
+while True:
+  print()
+  print("주사위를 던지자!")
+  a = random.randrange(1,7) #random.radint(1,6)
+  b = random.randrange(1,7)
+  c = random.randrange(1,7)
+  count+=1
+  print(a, ", ",b,", ",c)
+  if (a==b and b==c):
+    print("빙고!: 던진 횟수: ",count)
+    break
+  else:
+    print("땡! 다시-")
